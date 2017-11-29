@@ -1,0 +1,12 @@
+{
+  "name": "Facebook",
+  "display": "standalone",
+  "start_url": "facebook.html",
+  "orientation": "portrait-primary",
+  "icons": [{
+    "src": "facebook.png",
+    "sizes": "144x144",
+    "type": "image/png",
+    "density": "1.0"
+  }]
+}
