@@ -14,5 +14,7 @@ document.getElementById('text').innerText = 'You have tried to visit ' + SITE + 
 
 document.getElementById('reset').onclick = function() {
   window.localStorage.clear(SITE);
-  document.getElementById('text').innerText = 'You have not tried to visit ' + SITE + ' in the last week. Keep it up!';
+  document.getElementById('text').innerText = 'You have not tried to visit ' + SITE + ' in the last week.\nKeep it up!';
+  document.getElementsByTagName('body')[0].classList.add('okay');
+  document.getElementById('icon').innerText = '👍';
 };

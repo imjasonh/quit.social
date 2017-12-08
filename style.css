@@ -1,0 +1,22 @@
+body {
+  font-family: Arial;
+  background-color: red;
+}
+
+body.okay {
+  background-color: green;
+}
+
+div#container {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+  text-align: center;
+}
+
+div#icon {
+  font-size: 400px;
+}
+
+a#reset {}

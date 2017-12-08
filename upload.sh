@@ -9,6 +9,6 @@ for i in twitter facebook; do
   gsutil -h "Content-Type: text/html" cp $i gs://$BUCKET/
 done
 
-for type in html js json png; do
+for type in css html js json png; do
   gsutil cp *.$type gs://$BUCKET/
 done
