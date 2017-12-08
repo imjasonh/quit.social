@@ -1,10 +1,10 @@
 {
-  "name": "Facebook",
+  "name": "Instagram",
   "display": "standalone",
-  "start_url": "facebook",
+  "start_url": "instagram",
   "orientation": "portrait-primary",
   "icons": [{
-    "src": "facebook.png",
+    "src": "instagram.png",
     "sizes": "192x192",
     "type": "image/png",
     "density": "1.0"

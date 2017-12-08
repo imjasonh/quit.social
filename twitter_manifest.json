@@ -1,11 +1,11 @@
 {
   "name": "Twitter",
   "display": "standalone",
-  "start_url": "facebook.html",
+  "start_url": "facebook",
   "orientation": "portrait-primary",
   "icons": [{
     "src": "twitter.png",
-    "sizes": "144x144",
+    "sizes": "192x192",
     "type": "image/png",
     "density": "1.0"
   }]

@@ -13,6 +13,7 @@ div#container {
   margin: auto;
   border: 1px solid black;
   text-align: center;
+  padding: 30px;
 }
 
 div#icon {

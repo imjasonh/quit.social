@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<title>Instagram</title>
+<head>
+  <link rel="shortcut icon" href="instagram.png" type="image/png">
+  <link rel="apple-touch-icon" href="instagram.png">
+  <link rel="manifest" href="instagram_manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body><div id="container">
+  <h1 id="text">This isn't Instagram.</h1>
+  <div id="icon">📵</div>
+  <a href="#" id="reset">Reset</a>
+</div></body>
+<script type="text/javascript">
+let SITE = 'Instagram';
+</script>
+<script src="antisocial.js"></script>
+</html>
