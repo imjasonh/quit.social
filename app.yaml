@@ -1,0 +1,33 @@
+runtime: python27
+threadsafe: true
+
+handlers:
+- url: /([a-z]+)(_manifest\.json|\.js|\.png)$
+  static_files: \1\2
+  upload: .*(_manifest\.json|\.js|\.png)$
+  http_headers:
+    Strict-Transport-Security: max-age=86400; includeSubDomains
+
+- url: /(facebook|twitter|instagram)
+  static_files: \1.html
+  upload: .*\.html
+  http_headers:
+    Content-Type: text/html
+    Strict-Transport-Security: max-age=86400; includeSubDomains
+
+- url: /
+  static_files: index.html
+  upload: index\.html
+  http_headers:
+    Strict-Transport-Security: max-age=86400; includeSubDomains
+
+- url: /service-worker.js
+  static_files: service-worker.js
+  upload: service-worker\.js
+
+- url: /style.css
+  static_files: style.css
+  upload: style\.css
+  http_headers:
+    Strict-Transport-Security: max-age=86400; includeSubDomains
+

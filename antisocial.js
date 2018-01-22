@@ -1,3 +1,9 @@
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg) { console.log('Registered Service Worker'); })
+      .catch(function(err) { console.error('Error registering Service Worker:', err); });
+}
+
 var visits = window.localStorage.getItem(SITE);
 if (visits == null || visits == '') { visits = '[]'; }
 visits = JSON.parse(visits);

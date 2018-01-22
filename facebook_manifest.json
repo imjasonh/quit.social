@@ -1,7 +1,8 @@
 {
   "name": "Facebook",
+  "short_name": "Facebook",
   "display": "standalone",
-  "start_url": "facebook",
+  "start_url": "/facebook",
   "orientation": "portrait-primary",
   "icons": [{
     "src": "facebook.png",
