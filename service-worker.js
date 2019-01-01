@@ -16,6 +16,10 @@ self.addEventListener('install', function(e) {
         '/instagram',
         '/instagram.png',
         '/instagram_manifest.json',
+
+        '/snapchat',
+        '/snapchat.png',
+        '/snapchat_manifest.json',
     ]);
   }));
 });

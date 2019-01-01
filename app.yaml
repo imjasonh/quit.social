@@ -8,7 +8,7 @@ handlers:
   http_headers:
     Strict-Transport-Security: max-age=86400; includeSubDomains
 
-- url: /(facebook|twitter|instagram)
+- url: /(facebook|twitter|instagram|snapchat)
   static_files: \1.html
   upload: .*\.html
   http_headers:

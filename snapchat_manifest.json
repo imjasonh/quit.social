@@ -1,0 +1,13 @@
+{
+    "name": "Snapchat",
+    "display": "standalone",
+    "start_url": "snapchat",
+    "orientation": "portrait-primary",
+    "icons": [{
+      "src": "snapchat.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "1.0"
+    }]
+  }
+  
