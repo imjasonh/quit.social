@@ -6,7 +6,7 @@ mobile device? So do I. I made https://quit.social to help.
 Visit https://quit.social with your mobile browser and select an
 app you'd like to stop using. Add it to your phone's home screen:
 
-* **Safari on iOS**: Tap the share icon (![iOS share icon](./ios-share.png)),
+* **Safari on iOS**: Tap the share icon (<img src="./ios-share.png" height=20></img>),
   select **Add to Home Screen** and then **Add**.
 * **Chrome on Android**: Tap **Add to Homescreen**.
 
