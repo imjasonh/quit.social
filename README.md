@@ -29,9 +29,6 @@ The app's resources are served over HTTPS from a static-site-only App Engine
 app.
 
 ## TODO
--   [ ] Index page to explain wtf this is
--   [ ] Opt-in per service, so people can add to home screen without counting a
-    visit
 -   [ ] Reddit
 -   [ ] Slack
 -   [ ] Snapchat
