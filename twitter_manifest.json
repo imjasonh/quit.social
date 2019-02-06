@@ -1,7 +1,7 @@
 {
   "name": "Twitter",
   "display": "standalone",
-  "start_url": "facebook",
+  "start_url": "twitter",
   "orientation": "portrait-primary",
   "icons": [{
     "src": "twitter.png",
