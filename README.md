@@ -29,7 +29,6 @@ The app's resources are served over HTTPS from a static-site-only App Engine
 app.
 
 ## TODO
-
 -   [ ] Reddit
 -   [ ] Slack
 -   [ ] Snapchat
