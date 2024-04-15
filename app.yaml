@@ -1,4 +1,4 @@
-runtime: python37
+runtime: python312
 
 handlers:
 - url: /([a-z]+)(_manifest\.json|\.js|\.png)$
@@ -8,7 +8,7 @@ handlers:
   http_headers:
     Strict-Transport-Security: max-age=86400; includeSubDomains
 
-- url: /(facebook|twitter|instagram|snapchat)
+- url: /(facebook|twitter|instagram|snapchat|slack)
   static_files: \1.html
   upload: .*\.html
   secure: always
