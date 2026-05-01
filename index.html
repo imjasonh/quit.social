@@ -1,82 +1,62 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<html>
-
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: lightblue;
-    }
-
-    table {
-      width: 80%;
-      margin: auto;
-    }
-
-    ol {
-      text-align: left;
-    }
-
-    td {
-      width: 20%;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    img {
-      max-height: 100%;
-      max-width: 100%;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    small {
-      margin-top: 30px;
-      display: block;
-      color: blue;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>quit.social</title>
+  <link rel="stylesheet" href="v2.css">
 </head>
-
 <body>
-  <div id="container">
-    <h1>Need some help quitting social media?</h1>
+  <main class="layout">
+    <header class="hero">
+      <h1>quit.social</h1>
+      <p class="lede">Build a fake app shortcut that nudges you to pause before opening the real one.</p>
+    </header>
 
-    <h2>You've come to the right place.</h2>
+    <section class="card">
+      <h2>How it works</h2>
+      <ol>
+        <li>Pick an app, search the App Store, or upload your own icon.</li>
+        <li>Add the fake app to your home screen. Opening it gives you a gentle pause instead.</li>
+      </ol>
+      <p class="hint">Everything stays on your device. No analytics, no accounts, no backend.</p>
+    </section>
 
-    <ol>
-      <li>Select an app you'd like to stop using</li>
-      <li>Add the shortcut to your home screen:
-        <ul>
-          <li><b>On iOS:</b> Open the link in Safari, click the Share icon, then "Add to Home Screen"</li>
-          <li><b>On Android:</b> Open the link in Chrome, click "Add to Homescreen"</li>
-        </ul>
-      </li>
-      <li>Move or uninstall the real app, and replace it with the shortcut.</li>
-      <li>Feel the warm embrace of real human interaction with your friends and family.
-        <ul>
-          <li>Or read a book, books are great.</li>
-        </ul>
-      </li>
-    </ol>
+    <section class="card">
+      <h2>Pick an app</h2>
+      <div id="preset-grid" class="preset-grid"></div>
+    </section>
 
-    <b>Select an app to get started</b>
-    <table>
-      <tr>
-        <td><a href="twitter"><img src="twitter.png" /><br />Twitter</td>
-        <td><a href="instagram"><img src="instagram.png" /><br />Instagram</td>
-        <td><a href="slack"><img src="slack.png" /><br />Slack</td>
-        <td><a href="snapchat"><img src="snapchat.png" /><br />Snapchat</td>
-        <td><a href="facebook"><img src="facebook.png" /><br />Facebook</td>
-      </tr>
-    </table>
+    <section class="card">
+      <h2>Or search the App Store</h2>
+      <input id="search-input" type="search" placeholder="Search by name..." autocomplete="off">
+      <p id="search-status" class="hint"></p>
+      <div id="search-results" class="results"></div>
+    </section>
 
-    <small><a href="https://github.com/ImJasonH/quit.social">Source on GitHub</a></small>
-  </div>
+    <section class="card">
+      <h2>Or use your own icon</h2>
+      <label for="custom-name">App name</label>
+      <input id="custom-name" type="text" maxlength="24" placeholder="e.g. Instagram">
+      <label for="custom-icon" class="spaced">PNG icon (at least 180x180, under 1 MB)</label>
+      <input id="custom-icon" type="file" accept="image/png">
+      <p id="custom-status" class="hint"></p>
+      <button id="custom-submit" class="button" type="button" disabled>Open fake app</button>
+    </section>
+
+    <section class="card">
+      <h2>Install notes</h2>
+      <ul>
+        <li><strong>iOS (Safari):</strong> Share icon -> Add to Home Screen.</li>
+        <li><strong>Android (Chrome):</strong> Browser menu -> Add to Home screen / Install app.</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <a href="https://github.com/ImJasonH/quit.social">Source on GitHub</a>
+    </footer>
+  </main>
+
+  <script src="v2.js"></script>
 </body>
-
 </html>

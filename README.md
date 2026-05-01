@@ -1,34 +1,33 @@
-# Quit Social Media
+# quit.social
 
-Do you find it hard to stop using social media, especially on your
-mobile device? So do I. I made https://quit.social to help.
+Do you find it hard to stop opening social apps out of habit? So do I.
+[quit.social](https://quit.social) builds a fake-app shortcut that lives on your
+home screen where the real app used to be. When muscle memory makes you tap it,
+you get a gentle pause screen instead of an endless feed.
 
-Visit https://quit.social with your mobile browser and select an
-app you'd like to stop using. Add it to your phone's home screen:
+## Using it
 
-* **Safari on iOS**: Tap the share icon (<img src="./ios-share.png" height=20></img>),
-  select **Add to Home Screen** and then **Add**.
-* **Chrome on Android**: Tap **Add to Homescreen**.
+Open [quit.social](https://quit.social) in your mobile browser and either:
 
-Move or uninstall the real app, and replace it with the quit.social shortcut.
-Now, when your muscle memory makes you open the app, the fake app will open
-instead!
+1. Tap one of the preset apps (X, Facebook, TikTok, Slack, YouTube, LinkedIn,
+   Instagram, Reddit, Threads, Snapchat, Discord, Pinterest), or
+2. Search the App Store for any other app, or
+3. Upload your own PNG icon and pick a name.
+
+Any of those takes you straight to the fake app. Then add it to your home
+screen:
+
+- **iOS Safari**: Share icon -> Add to Home Screen.
+- **Android Chrome**: Browser menu -> Add to Home screen / Install app.
+
+Move or delete the real app, and let the fake one take its place.
 
 ## How it works
 
-The app installs a [Progressive Web
-App](https://developers.google.com/web/progressive-web-apps/) which looks just
-like the real app.
+The fake app is a Progressive Web App. Once installed, it loads instantly from
+its service-worker cache, so the pause screen works offline.
 
-The fake app caches its resources for offline access. Your recent visits are
-stored on your device using
-[`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Local_storage),
-and doesn't track any usage metrics server-side.
+Your recent visits are stored only in `localStorage`. No analytics, no
+accounts, no backend, no network calls beyond the App Store search you trigger.
 
-The app's resources are served over HTTPS from a static-site-only App Engine
-app.
-
-## TODO
--   [ ] Reddit
--   [ ] Slack
--   [ ] Snapchat
+Hosted as a fully static site on GitHub Pages.
