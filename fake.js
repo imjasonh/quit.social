@@ -60,12 +60,15 @@
     var platform = detectPlatform();
     var html = "";
     if (platform === "ios") {
-      html = "iOS: tap <strong>Share</strong>, then <strong>Add to Home Screen</strong>.";
+      html = "iOS: <strong>Share</strong> -> <strong>Add to Home Screen</strong>." +
+        "<br>Then drag it where the real app was, and move the real app away or delete it.";
     } else if (platform === "android") {
-      html = "Android: open the browser menu, then <strong>Add to Home screen</strong> or <strong>Install app</strong>.";
+      html = "Android: browser menu -> <strong>Add to Home screen</strong>." +
+        "<br>Then drag it where the real app was, and move the real app away or uninstall it.";
     } else {
       html = "iOS: <strong>Share</strong> -> <strong>Add to Home Screen</strong>." +
-        "<br>Android: browser menu -> <strong>Add to Home screen</strong>.";
+        "<br>Android: browser menu -> <strong>Add to Home screen</strong>." +
+        "<br>Then drag it where the real app was, and move the real app away or uninstall it.";
     }
     installHint.innerHTML = html;
     installHint.hidden = false;
